@@ -45,6 +45,14 @@
       "localizacao": "São Paulo",
       "urlFoto": "https://www.viagenscinematograficas.com.br/wp-content/uploads/2020/09/Ilhabela-SP-Praias-O-que-Fazer-Capa-2.jpg",
       "avaliacao": "4"
+    },
+    {
+      "id": "8685",
+      "nome": "Parque 13 de maio",
+      "categoria": "Endereços",
+      "localizacao": "Recife",
+      "urlFoto": "https://cdn.folhape.com.br/img/c/1200/900/dn_arquivo/2023/01/o-que-fazer-13-de-maio-destaque.jpg",
+      "avaliacao": "2"
     }
   ]
 }
