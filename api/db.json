@@ -1,0 +1,50 @@
+{
+  "categorias": [
+    {
+      "nome": "Restaurantes",
+      "descricao": "Lugares para alimentação e degustação",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nome": "Moradia",
+      "descricao": "Lugares para morar"
+    },
+    {
+      "id": "c79f",
+      "nome": "Praias",
+      "descricao": "Lugares para tomar banho com a familia"
+    },
+    {
+      "id": "b6e2",
+      "nome": "Endereços",
+      "descricao": "Lugares para visitar"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "5f3e",
+      "nome": "Praia do Arpoador",
+      "categoria": "Praias",
+      "localizacao": "Rio de Janeiro",
+      "urlFoto": "https://blog.hotelarpoador.com/wp-content/uploads/2024/10/Onde-fica-a-praia-do-Arpoador.jpg",
+      "avaliacao": "2"
+    },
+    {
+      "id": "44bd",
+      "nome": "Praia de Boa Viagem",
+      "categoria": "Praias",
+      "localizacao": "Recife",
+      "urlFoto": "https://viagemeturismo.abril.com.br/wp-content/uploads/2024/03/Portal-da-CopabarraME.jpg?crop=1&resize=1212,909",
+      "avaliacao": "2"
+    },
+    {
+      "id": "6ec9",
+      "nome": "Praia de Ilhabela",
+      "categoria": "Praias",
+      "localizacao": "São Paulo",
+      "urlFoto": "https://www.viagenscinematograficas.com.br/wp-content/uploads/2020/09/Ilhabela-SP-Praias-O-que-Fazer-Capa-2.jpg",
+      "avaliacao": "4"
+    }
+  ]
+}
