@@ -1,59 +1,103 @@
-# PasseioApp
+# Passeio App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Uma aplicação Angular desenvolvida para gerenciamento de passeios e atividades turísticas.
 
-## Development server
+## Sobre a Aplicação
 
-To start a local development server, run:
+O Passeio App é uma aplicação web construída com Angular que permite aos usuários explorar, visualizar e gerenciar passeios turísticos. A aplicação foi desenvolvida seguindo as melhores práticas do Angular, com foco na modularização e organização do código.
 
+## Funcionalidades Implementadas
+
+- 🗺️ Visualização de passeios disponíveis
+- 📱 Interface responsiva e intuitiva
+- 🔍 Sistema de busca e filtros
+- 📋 Gerenciamento de reservas
+- 👤 Área do usuário
+
+## Arquitetura Modular
+
+Este projeto foi estruturado seguindo o conceito de **módulos do Angular**, proporcionando:
+
+### Organização por Módulos
+
+- **Core Module**: Contém serviços singleton e funcionalidades essenciais da aplicação
+- **Shared Module**: Componentes, diretivas e pipes reutilizáveis em toda a aplicação
+- **Feature Modules**: Módulos específicos para cada funcionalidade principal:
+  - `PasseiosModule`: Gerenciamento de passeios
+  - `UsuarioModule`: Funcionalidades do usuário
+  - `ReservasModule`: Sistema de reservas
+
+### Benefícios da Modularização Aplicada
+
+1. **Lazy Loading**: Módulos carregados sob demanda, melhorando a performance
+2. **Separação de Responsabilidades**: Cada módulo tem uma responsabilidade específica
+3. **Reutilização de Código**: Componentes compartilhados através do SharedModule
+4. **Manutenibilidade**: Código organizado e fácil de manter
+5. **Escalabilidade**: Facilita a adição de novas funcionalidades
+
+### Estrutura de Módulos
+
+```
+src/
+├── app/
+│   ├── core/                 # Módulo principal (singleton)
+│   │   ├── services/
+│   │   └── core.module.ts
+│   ├── shared/               # Módulo compartilhado
+│   │   ├── components/
+│   │   ├── pipes/
+│   │   └── shared.module.ts
+│   ├── features/             # Módulos de funcionalidades
+│   │   ├── passeios/
+│   │   ├── usuario/
+│   │   └── reservas/
+│   └── app.module.ts         # Módulo raiz
+```
+
+## Tecnologias Utilizadas
+
+- **Angular**: Framework principal
+- **TypeScript**: Linguagem de programação
+- **Angular CLI**: Ferramenta de desenvolvimento
+- **RxJS**: Programação reativa
+- **Angular Material**: Biblioteca de componentes UI
+
+## Como Executar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/fabiolopes/passeio-app-ang.git
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Execute a aplicação:
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. Acesse `http://localhost:4200` no seu navegador
 
-## Code scaffolding
+## Scripts Disponíveis
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- `ng serve`: Executa a aplicação em modo de desenvolvimento
+- `ng build`: Compila a aplicação para produção
+- `ng test`: Executa os testes unitários
+- `ng lint`: Verifica a qualidade do código
 
-```bash
-ng generate component component-name
-```
+## Contribuição
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para contribuir com o projeto:
 
-```bash
-ng generate --help
-```
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
 
-## Building
+## Licença
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
